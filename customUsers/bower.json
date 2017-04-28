@@ -1,0 +1,17 @@
+{
+  "name": "customUsers",
+  "homepage": "https://github.com/hsono1/flaskLoginReg",
+  "authors": [
+    "Hans Sono <hans.sono23@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

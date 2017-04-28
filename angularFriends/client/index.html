@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- DONT FORGET TO ADD YOUR ANGULAR APP! -->
+<html ng-app= "myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Friends</title>
+    <!-- Angular from bower_components, otherwise find the CDN -->
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.js" charset="utf-8"></script>
+    <script src="angular-css/angular-css.js" charset="utf-8"></script>
+    <!-- End Bower Components -->
+    <script src="assets/app.js" charset="utf-8"></script>
+    <script src="assets/controllers/editController.js" charset="utf-8"></script>
+    <script src="assets/controllers/newController.js" charset="utf-8"></script>
+    <script src="assets/controllers/showController.js" charset="utf-8"></script>
+    <script src="assets/factories/friendsFactory.js" charset="utf-8"></script>
+
+  </head>
+  <body >
+    <div class="wrapper" ng-view=""></div>
+  
+  </body>
+</html>

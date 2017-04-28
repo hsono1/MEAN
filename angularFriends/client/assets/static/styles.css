@@ -1,0 +1,99 @@
+.wrapper
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	background-color: lightgrey;
+}
+.main
+{
+
+	position: relative;
+
+}
+
+table
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table th, td
+{
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+
+table, .right_side{
+	display: inline-block;
+}
+
+table
+{
+	vertical-align: top;
+	margin-right: 50px;
+
+}
+
+
+.right_side input, .right_side h6
+{
+	display: block;
+	vertical-align: top;
+	margin-top: 0px;
+
+}
+
+
+
+.right_side button
+{
+	display: block;
+}
+
+
+
+.right_side button
+{
+	margin-top: 50px;
+	border: 0px;
+	box-shadow: 2px 2px 5px black;
+	border-radius: 0%;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+}
+
+
+
+.messages
+{
+	display: block;
+	color: red;
+}
+
+a
+{
+	color: blue;
+}
+
+
+
+p.deleteLink
+{   margin : 0px;
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+
+}
+
+
+
+
+
+

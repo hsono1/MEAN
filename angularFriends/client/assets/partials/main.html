@@ -1,0 +1,35 @@
+<div class="main"> 
+	<p class="messages" ng-if=" messages.length > 0 ">{{messages[0]}}</p>
+	<table>
+
+		<thead>
+			<th>Name</th>
+			<th>Birthdate</th>
+			<th>Show</th>
+			<th>Update</th>
+			<th>Delete</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="friend in friends | filter : search track by $index">
+				<td>{{friend.first_name }} {{ friend.last_name }}  </td>
+				<td>{{friend.birthdate}}</td>
+				<td> <a href="#!/show/{{friend._id}}">show</a></td>
+				<td> <a href="#!/update/{{friend._id}}">update</a></td>
+				<td> <p class='deleteLink' ng-click="deleteFriend(friend)">delete</p></td>
+			</tr>
+
+		</tbody>
+
+
+
+
+
+	</table>
+
+	<div class="right_side">
+	<input type="text"  placeholder = "Filter: Birthdate" ng-model= "search.birthdate">
+	<button ng-click="goToNew()">New Friend</button>
+	</div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<a href="#!/players">Players</a> <a href="#!/teams">Teams</a> <a href="#!/associations">Associations</a>
+<br><br>
+<form ng-submit="addTeam()">
+Name <input type="text" ng-model="team.name" required>
+<button type="submit">Add Team</button>
+</form>
+
+<br>
+<br>
+
+<table border = 1 >
+	<thead>
+		<th>Team Name</th>
+		<th>Actions</th>
+	</thead>	
+	<tbody>
+		<tr ng-repeat="team in teams track by $index">
+			<td>{{team.name}}</td>
+			<td><button ng-click="removeTeam($index)">Remove Team</button></td>
+		</tr>
+	</tbody>
+</table>
